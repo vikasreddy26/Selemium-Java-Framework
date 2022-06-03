@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" preserve-order="true">
+    <listeners>
+        <listener class-name="lib.util.EventListners"></listener>
+    </listeners>
+    <test name="chrome test">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="testNgTests.InvalidLoginTest"/>
+            <class name="testNgTests.ValidLoginTest"/>
+        </classes>
+    </test>
+</suite>
